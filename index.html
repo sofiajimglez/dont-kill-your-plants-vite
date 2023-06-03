@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don't kill your plants</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+</head>
+
+<body>
+  <!--HOME PAGE-->
+  <div class="home-page" id="home-page">
+    <img src="images/logo.png" alt="Don't kill your plants logo" class="logo">
+    <button id="start" class="home-btn">Start</button>
+    <a id="how-to" class="home-btn" href="how-to-play.html">How to play</a>
+    <a id="gallery" class="home-btn" href="gallery.html">Gallery</a>
+    <div class="credits-info">
+      <p>Original art, game and idea by <strong>Sofía Jiménez</strong></p>
+      <a href="https://www.linkedin.com/in/sof%C3%ADa-jim%C3%A9nez-gonz%C3%A1lez/" target="_blank"><i
+          class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/sofiajimglez" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+    </div>
+
+    <audio id="home-song" autoplay loop>
+      <source src="audio/home.mp3" type="audio/mp3">
+    </audio> 
+
+  </div>
+
+  <!--GAME PAGE-->
+  <div class="game-container">
+    <section>
+      <div class="top-info">
+        <h3 id="season-info" class="season-info">Spring</h3>
+        <h3>Round: <span id="round-info">0</span></h3>
+      </div>
+
+      <div id="plant-stats" class="plant-stats">
+        <div class="bar-bg">
+          <p><i class="fa-solid fa-sun"></i> Sunlight: <span id="sunlight"></span></p>
+          <div id="progress-bar-sunlight" class="progress-bar-sunlight"></div>
+        </div>
+
+        <div class="bar-bg">
+          <p><i class="fa-solid fa-droplet"></i> Water: <span id="water"></span></p>
+          <div id="progress-bar-water" class="progress-bar-water"></div>
+        </div>
+
+        <div class="bar-bg">
+          <p><i class="fa-solid fa-leaf"></i> Space: <span id="space"></span></p>
+          <div id="progress-bar-space" class="progress-bar-space"></div>
+        </div>
+
+        <div class="bar-bg">
+          <p><i class="fa-solid fa-heart-pulse"></i> Health: <span id="health"></span></p>
+          <div id="progress-bar-health" class="progress-bar-health"></div>
+        </div>
+      </div>
+
+      <div id="cards-container" class="cards-container"></div>
+    </section>
+
+    <section>
+      <div class="plant-img plant-img-01" id="plant-img"></div>
+    </section>
+
+  </div>
+
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+  <script src="https://kit.fontawesome.com/7d777f035f.js" crossorigin="anonymous"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script> -->
+</body>
+
+</html>
