@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-    width: 40%;
+    width: 30%;
 }
 
 .home-btn {
@@ -72,7 +72,7 @@ body {
     justify-content: center;
     gap: 15px;
     font-size: 22px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .credits-info i {
